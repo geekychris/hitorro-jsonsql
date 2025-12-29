@@ -51,7 +51,7 @@ Latch (Abstract base)
 ### Package Structure
 
 ```
-ht.util.sql/
+com.hitorro.util.sql/
 └── latch/
     ├── latches/          # Type-specific latch implementations
     ├── var/              # Variable access (VarInt, VarString, etc.)

@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ht.util.sql;
+package com.hitorro.util.sql;
 
 
 import com.hitorro.sql.Token;

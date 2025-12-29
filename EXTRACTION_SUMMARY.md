@@ -95,7 +95,7 @@ hitorro-jsonsql/
 
 ### 3. Package Structure
 
-- **Mixed packages**: Both `ht.util.sql.*` and `com.hitorro.sql.*`
+- **Mixed packages**: Both `com.hitorro.util.sql.*` and `com.hitorro.sql.*`
 - Original structure preserved during extraction
 - Can be unified later if desired
 
@@ -127,7 +127,7 @@ hitorro-jsonsql/
 ## Package Breakdown
 
 ```
-ht.util.sql.latch/                 (SQL evaluation engine)
+com.hitorro.util.sql.latch/                 (SQL evaluation engine)
 ├── latches/                       # Type-specific value containers
 │   ├── IntLatch.java
 │   ├── LongLatch.java

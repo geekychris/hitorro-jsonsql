@@ -74,9 +74,9 @@ ls -lh target/
 ### Example 1: Simple Expression Evaluation
 
 ```java
-import ht.util.sql.latch.*;
-import ht.util.sql.latch.latches.*;
-import ht.util.sql.latch.var.*;
+import com.hitorro.util.sql.latch.*;
+import com.hitorro.util.sql.latch.latches.*;
+import com.hitorro.util.sql.latch.var.*;
 
 // Create variables
 VarInt x = new VarInt("x");
@@ -95,8 +95,8 @@ JSONLatchSource source = new JSONLatchSource(data);
 ### Example 2: Type Coercion
 
 ```java
-import ht.util.sql.latch.coercion.stringto.*;
-import ht.util.sql.latch.latches.*;
+import com.hitorro.util.sql.latch.coercion.stringto.*;
+import com.hitorro.util.sql.latch.latches.*;
 
 // Convert string to integer
 StringToInt converter = new StringToInt();
@@ -109,7 +109,7 @@ System.out.println(intValue.getValue()); // Outputs: 42
 ### Example 3: Aggregations
 
 ```java
-import ht.util.sql.latch.aggregate.*;
+import com.hitorro.util.sql.latch.aggregate.*;
 
 // Count aggregation
 Count counter = new Count();
@@ -125,8 +125,8 @@ SumLong summer = new SumLong();
 ### Example 4: String Functions
 
 ```java
-import ht.util.sql.latch.string.*;
-import ht.util.sql.latch.latches.*;
+import com.hitorro.util.sql.latch.string.*;
+import com.hitorro.util.sql.latch.latches.*;
 
 // Trim a string
 Trim trimmer = new Trim();
@@ -141,8 +141,8 @@ IntLatch length = lengthFunc.apply(input);
 ### Example 5: Mathematical Functions
 
 ```java
-import ht.util.sql.latch.math.*;
-import ht.util.sql.latch.latches.*;
+import com.hitorro.util.sql.latch.math.*;
+import com.hitorro.util.sql.latch.latches.*;
 
 // Calculate square root
 Sqrt sqrtFunc = new Sqrt();
@@ -261,7 +261,7 @@ mvn test -X
 ## Package Structure Overview
 
 ```
-ht.util.sql.latch/
+com.hitorro.util.sql.latch/
 ├── latches/          # IntLatch, StringLatch, etc.
 ├── var/              # Variable access (VarInt, VarString)
 ├── aggregate/        # COUNT, SUM, AVG, MAX, MIN
