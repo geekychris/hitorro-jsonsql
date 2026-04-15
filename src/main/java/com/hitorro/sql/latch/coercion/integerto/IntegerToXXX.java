@@ -30,7 +30,7 @@ import com.hitorro.sql.latch.var.vartypes.VarIntf;
 import com.hitorro.util.typesystem.TypeFieldDataType;
 
 public abstract class IntegerToXXX extends SingleParent<VarIntIntf> {
-    public static final VarIntf get(TypeFieldDataType type, VarIntf parent) {
+    public static VarIntf get(TypeFieldDataType type, VarIntf parent) {
         SingleParent sp = null;
         switch (type) {
             case String:

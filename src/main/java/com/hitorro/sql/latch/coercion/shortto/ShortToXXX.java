@@ -30,7 +30,7 @@ import com.hitorro.sql.latch.var.vartypes.VarShortIntf;
 import com.hitorro.util.typesystem.TypeFieldDataType;
 
 public abstract class ShortToXXX extends SingleParent<VarShortIntf> {
-    public static final VarIntf get(TypeFieldDataType type, VarIntf parent) {
+    public static VarIntf get(TypeFieldDataType type, VarIntf parent) {
         SingleParent sp = null;
         switch (type) {
             case String:

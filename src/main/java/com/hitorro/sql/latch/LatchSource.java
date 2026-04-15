@@ -64,7 +64,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public abstract class LatchSource<T> {
-    public static final BasefileProperty CoercionMapFile = new BasefileProperty("latchsource.coercion.file", "", "file://${ht_data}/sql/coercion.csv");
+    public static BasefileProperty CoercionMapFile = new BasefileProperty("latchsource.coercion.file", "", "file://${ht_data}/sql/coercion.csv");
     protected static HashHashMap<TypeFieldDataType, TypeFieldDataType, TypeFieldDataType> coercionMapper = getCoercionMapper();
     public long currentRow = 0;
     protected T row;
@@ -120,7 +120,7 @@ public abstract class LatchSource<T> {
         }
     }
 
-    public static final Object getValueAsObject(VarIntf intf) {
+    public static Object getValueAsObject(VarIntf intf) {
         switch (intf.getOutputDataType()) {
             case Double:
                 return ((VarDoubleIntf) intf).getDouble();
