@@ -19,11 +19,21 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-        <hitorro.util.version>3.0.0</hitorro.util.version>
-        <hitorro.base.version>3.0.0</hitorro.base.version>
+        <hitorro.util.version>3.0.1</hitorro.util.version>
+        <hitorro.base.version>3.0.1</hitorro.base.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.hitorro</groupId>
+            <artifactId>hitorro-streams</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.hitorro</groupId>
+            <artifactId>hitorro-basefile</artifactId>
+            <version>3.0.1</version>
+        </dependency>
         <!-- Hitorro Dependencies -->
         <dependency>
             <groupId>com.hitorro</groupId>
