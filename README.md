@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Hitorro Jsonsql logo" width="180">
+</p>
+
 # Hitorro JSON SQL
 
 SQL-like query engine for JSON documents with type-safe expression evaluation.
