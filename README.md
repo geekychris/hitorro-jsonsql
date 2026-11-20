@@ -119,8 +119,8 @@ LongLatch result = converter.coerce(doubleLatch);
 
 This module depends on the following Hitorro libraries that must be built and installed locally first:
 
-- **hitorro-util** (3.0.0+) - Core utilities and iteration framework
-- **hitorro-base** (3.0.0+) - Base abstractions for data access
+- **hitorro-util** (4.0.0+) - Core utilities and iteration framework
+- **hitorro-base** (4.0.0+) - Base abstractions for data access
 
 **⚠️ IMPORTANT**: These dependencies are **NOT available in Maven Central**. You must:
 1. Build and install `hitorro-util` to your local Maven repository first
@@ -178,7 +178,7 @@ mvn clean install -Dmaven.javadoc.skip=true
 ### Build Output
 
 After a successful build, you'll find:
-- `target/hitorro-jsonsql-3.0.0.jar` - Main library JAR (160KB)
+- `target/hitorro-jsonsql-4.0.0.jar` - Main library JAR (160KB)
 - `target/hitorro-jsonsql-3.0.0-jar-with-dependencies.jar` - Fat JAR with all dependencies (153MB)
 - `target/hitorro-jsonsql-3.0.0-sources.jar` - Source code JAR (107KB)
 

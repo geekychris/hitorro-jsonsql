@@ -24,13 +24,14 @@
 
 package com.hitorro.sql.latch;
 
-import com.fasterxml.jackson.databind.JsonNode;
+import tools.jackson.databind.JsonNode;
 import com.hitorro.util.core.iterator.JsonValueSource;
 import com.hitorro.sql.latch.latches.*;
 import com.hitorro.util.typesystem.TypeBaseIntf;
 import com.hitorro.util.typesystem.TypeFieldDataType;
 
 import java.util.Date;
+import com.hitorro.util.json.JsonValues;
 
 public class JSONLatchSource extends LatchSource<JsonValueSource> {
     public JSONLatchSource(TypeBaseIntf type) {
@@ -45,7 +46,7 @@ public class JSONLatchSource extends LatchSource<JsonValueSource> {
             ll.validRow = false;
             return false;
         } else {
-            ll.value = e.textValue();
+            ll.value = JsonValues.textValue(e);
             return true;
         }
     }
@@ -58,7 +59,7 @@ public class JSONLatchSource extends LatchSource<JsonValueSource> {
             ll.validRow = false;
             return false;
         } else {
-            ll.value = e.longValue();
+            ll.value = JsonValues.longValue(e);
             return true;
         }
     }
@@ -84,7 +85,7 @@ public class JSONLatchSource extends LatchSource<JsonValueSource> {
             il.validRow = false;
             return false;
         } else {
-            il.value = e.intValue();
+            il.value = JsonValues.intValue(e);
             return true;
         }
     }
@@ -97,7 +98,7 @@ public class JSONLatchSource extends LatchSource<JsonValueSource> {
             il.validRow = false;
             return false;
         } else {
-            il.value = (short) e.intValue();
+            il.value = (short) JsonValues.intValue(e);
             return true;
         }
     }
@@ -110,7 +111,7 @@ public class JSONLatchSource extends LatchSource<JsonValueSource> {
             fl.validRow = false;
             return false;
         } else {
-            fl.value = (float) e.doubleValue();
+            fl.value = (float) JsonValues.doubleValue(e);
             return true;
         }
     }
@@ -123,7 +124,7 @@ public class JSONLatchSource extends LatchSource<JsonValueSource> {
             dl.validRow = false;
             return false;
         } else {
-            dl.value = e.doubleValue();
+            dl.value = JsonValues.doubleValue(e);
             return true;
         }
     }
