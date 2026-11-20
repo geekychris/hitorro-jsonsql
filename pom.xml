@@ -19,8 +19,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-        <hitorro.util.version>3.0.1</hitorro.util.version>
-        <hitorro.base.version>3.0.1</hitorro.base.version>
+        <hitorro.util.version>3.0.2</hitorro.util.version>
+        <hitorro.base.version>3.0.2</hitorro.base.version>
     </properties>
 
     <dependencyManagement>
