@@ -1,0 +1,12 @@
+key1,key2,payload
+string,int,int
+string,long,long
+string,float,float
+string,double,double
+integer,float,float
+int,long,long
+int,double,double
+string,date,date
+int,date,date
+long,date,date
+long,double,double

@@ -24,7 +24,7 @@
 
 package com.hitorro.sql.iterators;
 
-import com.fasterxml.jackson.databind.node.JsonNodeFactory;
+import tools.jackson.databind.node.JsonNodeFactory;
 import com.hitorro.util.basefile.fs.BaseFile;
 import com.hitorro.util.basefile.tools.BaseFileUtil;
 import com.hitorro.util.core.GenericKeyValue;

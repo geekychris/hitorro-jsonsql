@@ -24,8 +24,9 @@
 
 package com.hitorro.sql.latch;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
+import com.hitorro.util.json.JsonMappers;
 import com.hitorro.sql.latch.latches.*;
 import com.hitorro.util.core.iterator.JsonValueSource;
 import com.hitorro.util.typesystem.TypeBaseIntf;
@@ -44,7 +45,7 @@ public class JSONLatchSourceTest {
 
     @Before
     public void setUp() {
-        mapper = new ObjectMapper();
+        mapper = JsonMappers.json();
         typeBase = new Type();
         latchSource = new JSONLatchSource(typeBase);
     }
